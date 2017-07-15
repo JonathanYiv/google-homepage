@@ -3,6 +3,7 @@
 	border: 0;
 	padding: 0;
 	font-family: arial, sans-serif;
+	text-decoration: none;
 }
 
 .searchbar {
@@ -71,12 +72,13 @@
 	text-align: center;
 }
 
-p {
+p, li {
 	font-size: 13px;
 }
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 #googlehometext {
@@ -84,11 +86,70 @@ a {
 	bottom: 10px;
 }
 
-ul {
+#googlehomelink:hover {
+	text-decoration: underline;
+}
+
+.top-nav ul {
 	list-style-type: none;
 	float: right;
+	margin-top: 10px;
 }
 
 li {
 	display: inline;
+	padding: 8px;
+	
+}
+
+.top-nav li a {
+	color: hsl(0, 0%, 20%);
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+.top-nav input {
+	background-color: #4285f4;
+	color: #fff;
+	height: 30px;
+	border-radius: 2px;
+	font-weight: bold;
+	padding: 0 16px;
+}
+
+.top-nav #apps {
+	position: relative;
+	top: 4px;
+}
+
+.top-nav #notifications {
+	position: relative;
+	top: 9px;
+}
+
+.bottom-nav ul {
+	background-color: hsl(0, 0%, 95%);
+	border: 1px solid hsl(0, 0%, 98%);
+	height: 40px;
+	line-height: 30px;
+	color: hsl(0, 0%, 45%);
+
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.bottom-nav ul li:nth-child(-n+3) {
+	float: left;
+}
+
+/* Duly note that nth-child couples CSS/HTML too much 
+and a different solution is recommended */
+
+.bottom-nav ul li {
+	float: right;
+	margin-right: 1%;
+	margin-left: 1%;
 }
