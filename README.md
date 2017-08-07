@@ -5,6 +5,8 @@ The provided webpage was the [google homepage](https://www.google.com/) at the t
 
 This is a project from [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-css).
 
+![Google Homepage](/images/demo.png)
+
 ## Installation
 
 Open your Terminal/Command Line. Navigate to the directory where your version will live. Type in the following:
